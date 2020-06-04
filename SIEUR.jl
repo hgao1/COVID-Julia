@@ -17,7 +17,7 @@ model <= Reaction("lack of tracing", 0.98, "UE + E --> I + IA + UA")
 model <= Reaction("getting over it", 0.98, "I + IA--> R")
 model <= Reaction("unknown exposure", 0.7, "U + IA + I --> UE + I + IA")
 model <= Reaction("undocumented results", 0.98, "UA --> UR")
-result = simulate(model, Direct(), tfinal= 1000.0,rates_cache = HasRates,
+result = simulate(model, Direct(), tfinal= 100.0,rates_cache = HasRates,
                       save_points = 0:1:1000.0)
 
 
